@@ -1,0 +1,27 @@
+#introheader{
+    background-image: url('./Assets/cartoon_profile.png');
+}
+
+.introduction{
+    background-image: url('./Assets/cartoon_profile.png');
+}
+
+#analyst, #apm, #intern{
+    background: #080;
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}    
+
+
+h1 {
+ color: white;
+ font-family: 'Work Sans', sans-serif;;
+ src: url();
+}
+
+h2 {
+    color: purple;
+    font-family: 'Saira', sans-serif;;
+   }
