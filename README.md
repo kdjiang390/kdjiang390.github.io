@@ -1,3 +1,2 @@
 # kdjiang390.github.io
-static personal website
-testing purposes
+Building my first static personal webpage!
