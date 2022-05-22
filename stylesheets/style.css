@@ -75,13 +75,13 @@ h1 {
   background-color: var(--soho_black);
   width: 800px;
   color: var(--soho_white);
-  font-size:90px;
+  font-size:80px;
   bottom: 100px;
   font-family: var(--h1_font);
   font-weight: bold;
   position: flex;
   text-align: left;
-  padding: 20px 0px 20px 15px;
+  padding: 20px 0px 0px 15px;
 }
 
 #intro_liners h2 {
