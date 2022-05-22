@@ -1,0 +1,172 @@
+:root{
+  --soho_dgrey: rgb(78,79,84);
+  --soho_white: rgb(255,255,255);
+  --soho_lgray: #c8cfd6ff;
+  --soho_black: #1f1d1fff;
+  --soho_maroon: #624445ff;
+  --coffeekey-teal: hsla(192, 25%, 44%, 1);
+  --coffeekey-brown: hsla(29, 43%, 12%, 1);
+  --coffeekey-grey: hsla(44, 8%, 35%, 1);
+  --coffeekey-black: hsla(100, 6%, 10%, 1);
+  --red-ryb: hsla(2, 96%, 54%, 1);
+  --h4_font: 'Manrope', sans-serif;
+  --h2_font: 'Baskerville', sans-serif;
+  --h3_font: 'Roboto', sans-serif;
+  --h1_font: 'Libre Baskerville', serif;
+}
+
+* {
+  margin: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body{
+  background: var(--coffeekey-black);
+}
+
+.introheader{
+  background-image: url(/kdjiang390.github.io/Assets/intro_photo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:static;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+
+#nav {
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  background-color: transparent;
+  padding: 30px 0px;
+}
+
+  
+#nav ul li {
+  font-family: var(--h1_font);
+  font-size: 20px;
+  display: inline-block; 
+  padding: 5px 10px;
+  transition: background .5s; 
+}
+  
+#nav ul li:hover {
+  background-color: var(--coffeekey-teal);
+  cursor: pointer; 
+  transition: background .5s; 
+  border-radius: 5px;
+}
+
+#nav ul li a {
+  color: var(--soho_white);
+  text-decoration: none;
+}
+
+
+h1 {
+  color: var(--soho_white);
+  font-size:100px;
+  bottom: 100px;
+  font-family: var(--h1_font);
+  font-weight: bold;
+  position: flex;
+  text-align: left;
+  padding: 60px 0px 0px 15px;
+
+}
+
+#intro_liners h2 {
+  color: var(--soho_white);
+  font-size:30px;
+  font-family: var(--h2_font);
+  font-weight: bold;
+  text-align: left;
+  padding: 350px 50px 0px 20px;
+
+}
+
+#intro_liners h3 {
+  color: var(--soho_white);
+  font-size:20px;
+  font-family: var(--h2_font);
+  font-weight: bold;
+  text-align: left;
+  padding: 40px 0px 0px 20px;
+}
+
+#intro_liners ul{
+  padding: 30px 0px 0px 0px;
+}
+
+#intro_liners li{
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+#intro_liners li a{
+  font-size: 15px;
+  font-family: var(--h3_font);
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border-style: solid;
+  border-color: white;
+  box-sizing: border-box;
+  width: 100px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+#socialmedia{
+  text-decoration: none;
+  padding: 10px 20px 30px 20px;
+}
+
+footer {
+  color: white;
+  text-align: center;
+}
+
+/* BELOW: about me page*/
+.intro_paragraph{
+  width: 100%;
+  height: 100%;
+}
+
+.intro_paragraph P{
+  text-align: center;
+  color: white;
+  padding: 200px 0px 0px 0px;
+}
+
+.intro_paragraph h2{
+  text-align: center;
+}
+
+#analyst, #apm, #intern{
+  object-position: top right;
+  display: inline-block;
+  background: var(--soho_maroon);
+  width: 15%;
+  height: 15%;
+  padding: 10px 10px 10px 10px;
+  margin: 50px 10px;  
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px var(--soho_lgray);
+  border-radius: 10px;
+}
+
+#analyst a, #apm a, #intern a{
+  text-decoration: none;
+}
+
+#analyst:hover, #apm:hover, #intern:hover {
+  background-color: var(--coffeekey-teal);
+  cursor: pointer; 
+  border-radius: 10px;
+  transition: background .5s;
+}
