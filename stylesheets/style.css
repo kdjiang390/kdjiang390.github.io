@@ -11,7 +11,7 @@
   --red-ryb: hsla(2, 96%, 54%, 1);
   --h4_font: 'Manrope', sans-serif;
   --h2_font: 'Baskerville', sans-serif;
-  --h3_font: 'Roboto', sans-serif;
+  --h3_font: 'Lexend Deca', sans-serif;
   --h1_font: 'Libre Baskerville', serif;
 }
 
@@ -72,6 +72,8 @@ body{
 
 
 h1 {
+  background-color: var(--soho_black);
+  width: 800px;
   color: var(--soho_white);
   font-size:90px;
   bottom: 100px;
@@ -79,26 +81,29 @@ h1 {
   font-weight: bold;
   position: flex;
   text-align: left;
-  padding: 60px 0px 0px 15px;
+  padding: 20px 0px 20px 15px;
 }
 
 #intro_liners h2 {
+
   color: var(--soho_white);
   font-size:27px;
   font-family: var(--h2_font);
   font-weight: bold;
   text-align: left;
-  padding: 350px 50px 0px 20px;
+  padding: 350px 20px 20px 20px;
 
 }
 
 #intro_liners h3 {
+  background-color: var(--soho_black);
+  width: 795px;
   color: var(--soho_white);
   font-size:18px;
-  font-family: var(--h2_font);
+  font-family: var(--h3_font);
   font-weight: bold;
   text-align: left;
-  padding: 40px 0px 0px 20px;
+  padding: 20px 0px 20px 20px;
 }
 
 #intro_liners ul{
