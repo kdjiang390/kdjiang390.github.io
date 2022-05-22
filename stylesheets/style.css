@@ -28,7 +28,7 @@ body{
 }
 
 .introheader{
-  background-image: url(/kdjiang390.github.io/Assets/intro_photo.jpg);
+  background-image: url(https://kdjiang390.github.io/Assets/intro_photo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position:static;
