@@ -32,7 +32,7 @@ body{
   /* remember to add https:// to link */
   background-image: url(https://kdjiang390.github.io/Assets/me.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto 100%;
   position:static;
   height: 100%;
   width: 100%;
@@ -160,41 +160,84 @@ footer {
 }
 
 /* BELOW: about me page*/
-.intro_paragraph{
+.aboutme_introheader{
+  /* remember to add https:// to link */
+  background-image: url(/kdjiang390.github.io/Assets/aboutme_introheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:static;
+  height: 100%;
   width: 100%;
+  aspect-ratio: 16/9;
+}
+
+
+.intro_paragraph{
+  padding: 30% 0px 0px 0px;
+}
+
+.intro_content P{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+}
+
+.journey_container{
+  background-color: var(--soho_lgray);
+  position: relative;
   height: 100%;
 }
 
-.intro_paragraph P{
-  text-align: center;
-  color: white;
-  padding: 200px 0px 0px 0px;
+.journey_content h1{
+  background: transparent;
 }
 
-.intro_paragraph h2{
-  text-align: center;
+#tesla_container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 0px;
+  grid-auto-rows: minmax(auto, auto);
 }
 
-#analyst, #apm, #intern{
-  object-position: top right;
-  display: inline-block;
-  background: var(--soho_maroon);
-  width: 15%;
-  height: 15%;
-  padding: 10px 10px 10px 10px;
-  margin: 50px 10px;  
-  box-sizing: border-box;
-  box-shadow: 5px 5px 5px var(--soho_lgray);
-  border-radius: 10px;
+#tesla_container img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px 0px 300px;
+  position: relative;
 }
 
-#analyst a, #apm a, #intern a{
-  text-decoration: none;
+#tesla_content{
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  display: block;
+  padding: 0px 0px 0px 0px;
+  line-height: 30px;
 }
 
-#analyst:hover, #apm:hover, #intern:hover {
-  background-color: var(--coffeekey-teal);
-  cursor: pointer; 
-  border-radius: 10px;
-  transition: background .5s;
+#hope_container {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 0px;
+  grid-auto-rows: minmax(auto, auto);
+}
+
+#hope_container img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 50px;
+  height: 50px;
+  margin: 0px 0px 0px 300px;
+  position: relative;
+}
+
+#hope_content{
+  grid-column: 2;
+  grid-row: 1;
+  position: relative;
+  display: block;
+  padding: 0px 0px 0px 0px;
+  line-height: 30px;
 }
