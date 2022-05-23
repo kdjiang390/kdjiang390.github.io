@@ -32,7 +32,7 @@ body{
   /* remember to add https:// to link */
   background-image: url(https://kdjiang390.github.io/Assets/me.jpg);
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   position:static;
   height: 100%;
   width: 100%;
@@ -40,29 +40,29 @@ body{
 }
 
 #nav {
+  position: sticky;
+  position:-webkit-sticky;
   width: 100%;
-  position: fixed;
+  top: 0;
   text-align: center;
-  background-color: transparent;
   background-color: var(--soho_black);
 }
 
-  
 #nav ul li {
   font-family: var(--h2_font);
   font-weight: bold;
   font-size: 18px;
   display: inline-block;
-  padding: 40px 0px;
+  padding: 30px 0px 30px 0px;
   transition: background .5s;
-  width: 15%;
-  height: 100%;
+  width: 200px;
+  height: 10%;
 }
   
 #nav ul li:hover {
   background-color: var(--coffeekey-teal);
   cursor: pointer; 
-  transition: background .5s; 
+  transition: background .5s;
 }
 
 #nav ul li a {
@@ -70,10 +70,15 @@ body{
   text-decoration: none;
 }
 
+#intro_liners{
+  word-break:break-word;
+  text-align: left;
+  white-space: normal;
+}
 
 h1 {
   background-color: var(--soho_black);
-  width: 800px;
+  width: 53%;
   color: var(--soho_white);
   font-size:80px;
   bottom: 100px;
@@ -97,7 +102,7 @@ h1 {
 
 #intro_liners h3 {
   background-color: var(--soho_black);
-  width: 795px;
+  width: 52.65%;
   color: var(--soho_white);
   font-size:18px;
   font-family: var(--h3_font);
@@ -136,7 +141,7 @@ h1 {
 }
 
 #socialmedia ul{
-  padding: 0px 0px 0px 17px;
+  padding: 0px 0px 5% 17px;
 }
 
 #socialmedia ul li{
@@ -145,6 +150,7 @@ h1 {
   display: inline-block;
   padding: 0px 0px 0px 0px;
   width: 70px;
+  height: 10%;
 }
 
 #socialmedia ul li a img:hover{
@@ -162,7 +168,7 @@ footer {
 /* BELOW: about me page*/
 .aboutme_introheader{
   /* remember to add https:// to link */
-  background-image: url(/kdjiang390.github.io/Assets/aboutme_introheader.jpg);
+  background-image: url(https://kdjiang390.github.io/Assets/aboutme_introheader.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position:static;
@@ -182,62 +188,105 @@ footer {
   font-size: 50px;
 }
 
+.journey_container p{
+  word-break:break-word;
+  text-align: left;
+  white-space: normal;
+}
+
 .journey_container{
   background-color: var(--soho_lgray);
-  position: relative;
-  height: 100%;
+  background-size: auto 100%;
+  resize: vertical;
+  overflow: auto;
 }
 
 .journey_content h1{
   background: transparent;
+  text-align: center;
+  position: static;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 50px;
+  padding: 50px 0px 50px 0px;
 }
 
 #tesla_container {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(20px, 20px);
   gap: 0px;
   grid-auto-rows: minmax(auto, auto);
 }
 
 #tesla_container img {
+  grid-area: tesla_container;
   grid-column: 1;
   grid-row: 1;
-  width: 50px;
+  position: sticky;
   height: 50px;
-  margin: 0px 0px 0px 300px;
-  position: relative;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 90%;
 }
 
 #tesla_content{
+  grid-area: tesla_container;
   grid-column: 2;
   grid-row: 1;
-  position: relative;
-  display: block;
-  padding: 0px 0px 0px 0px;
   line-height: 30px;
+  width: 500px;
+  margin-left: 100px;
+  position: sticky;
+  top: 0;
 }
 
 #hope_container {
   display: grid;
-  grid-template-columns: repeat(2, 2fr);
+  grid-template-columns: repeat(20px, 2fr);
   gap: 0px;
   grid-auto-rows: minmax(auto, auto);
 }
 
 #hope_container img {
+  grid-area: hope_container;
   grid-column: 1;
   grid-row: 1;
-  width: 50px;
+  position: sticky;
   height: 50px;
-  margin: 0px 0px 0px 300px;
-  position: relative;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 90%;
 }
 
 #hope_content{
+  grid-area: hope_container;
   grid-column: 2;
   grid-row: 1;
-  position: relative;
-  display: block;
-  padding: 0px 0px 0px 0px;
   line-height: 30px;
+  width: 500px;
+  margin-left: 100px;
+  position: sticky;
+  top: 0;
+}
+
+/* PORTFOLIO PAGE*/
+.portfolio_introheader{
+  background-image: url(https://kdjiang390.github.io/Assets/portfolio_introheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:static;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+/* CONTACTS PAGE*/
+.contacts_introheader{
+  background-image: url(https://kdjiang390.github.io/Assets/contacts_introheader.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:static;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 16/9;
 }
