@@ -67,9 +67,9 @@ background-color: black;
 #nav ul li {
 
   font-weight: bold;
-  font-size: 18px;
+  font-size: 100%;
   display: inline-block;
-  padding: 30px 0px 30px 0px;
+  padding: 3% 0px 3% 0px;
   transition: background .5s;
   width: 200px;
   height: 10%;
@@ -91,25 +91,28 @@ background-color: black;
   word-break:break-word;
   text-align: left;
   white-space: normal;
+  background-color: var(--soho_black);
+  width: 50%;
+  padding: 0px 0px 0px 0px;
+  margin-top: 10%;
 }
 
 h1 {
-  background-color: var(--soho_black);
-  width: 53%;
+  width: fit-content;
   color: var(--soho_white);
-  font-size:3.2em;
+  font-size:295%;
   bottom: 100px;
   font-family: var(--h1_font);
   font-weight: bold;
   position: flex;
   text-align: left;
-  padding: 20px 0px 0px 15px;
+  padding: 20px 20px 0px 15px;
 }
 
 #intro_liners h2 {
-
+  width: fit-content;
   color: var(--soho_white);
-  font-size:1.5em;
+  font-size:150%;
   font-family: var(--h2_font);
   font-weight: bold;
   text-align: left;
@@ -118,14 +121,13 @@ h1 {
 }
 
 #intro_liners h3 {
-  background-color: var(--soho_black);
-  width: 52.65%;
+  width: fit-content;
   color: var(--soho_white);
   font-size:1em;
   font-family: var(--h3_font);
   font-weight: bold;
   text-align: left;
-  padding: 20px 0px 20px 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 #intro_liners ul{
@@ -158,7 +160,7 @@ h1 {
 }
 
 #socialmedia ul{
-  padding: 0px 0px 5% 17px;
+  padding: 3% 0px 5% 17px;
 }
 
 #socialmedia ul li{
