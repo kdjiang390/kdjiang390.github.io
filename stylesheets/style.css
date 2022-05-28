@@ -215,36 +215,37 @@ h1 {
   background-color: var(--soho_lgray);
   background-size: auto 100%;
   resize: vertical;
-  overflow: auto;
 }
 
 .journey_content h1{
   background: transparent;
   text-align: center;
   position: static;
-  width: auto;
+  width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  font-size: 50px;
+  font-size: 300%;
   padding: 50px 0px 50px 0px;
 }
 
 #tesla_container {
   display: grid;
-  grid-template-columns: repeat(20px, 20px);
+  grid-template-columns: repeat(40%, 50%);
   gap: 0px;
   grid-auto-rows: minmax(auto, auto);
+  justify-content: start;
+  font-size: 100%;
+  margin-left: 28%;
 }
 
 #tesla_container img {
   grid-area: tesla_container;
   grid-column: 1;
   grid-row: 1;
-  position: sticky;
+  position: static;
   height: 50px;
   top: 0;
   padding-top: 10px;
-  padding-left: 90%;
 }
 
 #tesla_content{
@@ -252,28 +253,30 @@ h1 {
   grid-column: 2;
   grid-row: 1;
   line-height: 30px;
-  width: 500px;
-  margin-left: 100px;
-  position: sticky;
+  width: 50%;
+  margin-left: 5%;
+  position: static;
   top: 0;
 }
 
 #hope_container {
   display: grid;
-  grid-template-columns: repeat(20px, 2fr);
+  grid-template-columns: repeat(50%, 50%);
   gap: 0px;
+  justify-content: start;
   grid-auto-rows: minmax(auto, auto);
+  font-size: 100%;
+  margin-left: 28%;
 }
 
 #hope_container img {
   grid-area: hope_container;
   grid-column: 1;
   grid-row: 1;
-  position: sticky;
+  position: static;
   height: 50px;
   top: 0;
   padding-top: 10px;
-  padding-left: 90%;
 }
 
 #hope_content{
@@ -281,9 +284,9 @@ h1 {
   grid-column: 2;
   grid-row: 1;
   line-height: 30px;
-  width: 500px;
-  margin-left: 100px;
-  position: sticky;
+  width: 50%;
+  margin-left: 5%;
+  position: static;
   top: 0;
 }
 
