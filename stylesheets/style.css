@@ -290,6 +290,11 @@ h1 {
   top: 0;
 }
 
+.community_container {
+  background-color: var(--soho_maroon);
+  color: white;
+}
+
 /* PORTFOLIO PAGE*/
 .portfolio_introheader{
   background-image: url(https://kdjiang390.github.io/Assets/portfolio_introheader.jpg);
