@@ -36,8 +36,11 @@
 .intro_paragraph p{
   color: white;
   text-align: center;
-  font-family: var(--h3_font);
+  font-family: var(--h5_font);
+  padding-top: 10%;
 }
+/* DELTE WHEN ALL PAGES ARE COMPLETE*/
+
 
 footer {
   color: white;
@@ -105,19 +108,19 @@ footer {
 #intro_liners h1 {
   width: fit-content;
   color: var(--soho_white);
-  font-size:325%;
+  font-size:7vw;
   bottom: 100px;
   font-family: var(--h5_font);
   font-weight: bold;
   position: flex;
   text-align: left;
-  padding: 20px 15px 0px 15px;
+  padding: 0px 15px 0px 15px;
 }
 
 #intro_liners h2 {
   width: fit-content;
   color: var(--soho_white);
-  font-size:150%;
+  font-size:2vw;
   font-family: var(--h3_font);
   font-weight: bold;
   text-align: left;
@@ -128,7 +131,7 @@ footer {
 #intro_liners h3 {
   width: fit-content;
   color: var(--soho_white);
-  font-size:1em;
+  font-size:2vw;
   font-family: var(--h3_font);
   font-weight: bold;
   text-align: left;
@@ -219,19 +222,20 @@ footer {
   white-space: normal;
   text-decoration: none;
   width: 100%;
-  margin: 20% 0 0 0;
+  padding-top: 5%;
 }
 
 .intro_content h1{
   color: var(--soho_black_opaque);
   text-align: center;
-  font-size: 600%;
+  font-size: 7vw;
 }
 
 .intro_content p{
   color: var(--soho_white);
   text-align: center;
-  font-size: 200%;
+  font-size: 3vw;
+  font-family: var(--h3_font);
 }
 
 /*Journey section*/
@@ -241,166 +245,272 @@ footer {
 }
 
 .journey_container{
-  background-color: var(--soho_dgrey_opaque);
+  background-color: var(--soho_black_opaque);
   background-size: auto 100%;
   resize: vertical;
 }
 
 .journey_content h1{
   color: white;
-  font-family: var(--h3_font);
+  font-family: var(--h5_font);
   position:static;
   text-align: center;
-  font-size: 300%;
-  padding-top: 5%;
-  margin: 5% 5% 3% 5%;
+  font-size: 400%;
+  padding: 3%;
 }
 
-#tesla_container {
-  display: grid;
-  grid-template-columns: repeat(40%, 50%);
-  gap: 10px;
-  grid-auto-rows: minmax(auto, auto);
-  justify-content: start;
+.journey_content #title, .journey_content #location, .journey_content #company{
+  font-family: var(--h3_font);
+  color: var(--soho_white);
   font-size: 100%;
-  margin-left: 28%;
+  line-height: 150%;
 }
 
-#tesla_container img {
-  grid-area: tesla_container;
+.journey_content p {
+  font-family: var(--h4_font);
+  color: var(--soho_white);
+  font-size: 1.5vw;
+  line-height: 150%;
+}
+
+.journey_grid {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 2%;
+  row-gap: 5vw;
+  justify-content:center;
+  font-size: 100%;
+  padding-bottom: 5%;
+}
+
+#tesla_image {
+  grid-area: journey_grid;
   grid-column: 1;
   grid-row: 1;
   position: static;
-  height: 50px;
-  top: 0;
-  padding-top: 10px;
+  height: 15vw;
+  padding-top: 1%;
+  margin-left: 30%;
 }
 
 #tesla_content{
-  grid-area: tesla_container;
+  grid-area: journey_grid;
   grid-column: 2;
   grid-row: 1;
-  line-height: 30px;
-  width: 60%;
-  margin-left: 5%;
+  line-height: 3vw;
+  width: 50vw;
   position: static;
-  top: 0;
-  font-family: var(--h4_font);
-  color: var(--soho_white);
-  margin-bottom: 5%;
 }
 
-#hope_container {
-  display: grid;
-  grid-template-columns: repeat(50%, 50%);
-  gap: 10px;
-  justify-content: start;
-  grid-auto-rows: minmax(auto, auto);
-  font-size: 100%;
-  margin-left: 28%;
-}
-
-#hope_container img {
-  grid-area: hope_container;
+#umd_image {
+  grid-area: journey_grid;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
   position: static;
-  height: 50px;
-  top: 0;
-  padding-top: 10px;
+  height: 15vw;
+  padding-top: 1%;
+  margin-left: 30%;
+}
+
+#umd_content{
+  grid-area: journey_grid;
+  grid-column: 2;
+  grid-row: 2;
+  line-height: 3vw;
+  width: 50vw;
+  position: static;
+}
+
+#hope_image {
+  grid-area: journey_grid;
+  grid-column: 1;
+  grid-row: 3;
+  position: static;
+  height: 15vw;
+  padding-top: 1%;
+  margin-left: 30%;
 }
 
 #hope_content{
-  grid-area: hope_container;
+  grid-area: journey_grid;
   grid-column: 2;
-  grid-row: 1;
-  line-height: 30px;
-  width: 60%;
-  margin-left: 5%;
+  grid-row: 3;
+  line-height: 3vw;
+  width: 50vw;
   position: static;
-  top: 0;
 }
-/*last journey piece has to have padding bottom 5%*/
+
+#liberty_image {
+  grid-area: journey_grid;
+  grid-column: 1;
+  grid-row: 4;
+  position: static;
+  height: 15vw;
+  padding-top: 1%;
+  margin-left: 30%;
+}
+
+#liberty_content{
+  grid-area: journey_grid;
+  grid-column: 2;
+  grid-row: 4;
+  line-height: 3vw;
+  width: 50vw;
+  position: static;
+}
+
+#cab_image {
+  grid-area: journey_grid;
+  grid-column: 1;
+  grid-row: 5;
+  position: static;
+  height: 15vw;
+  padding-top: 1%;
+  margin-left: 30%;
+}
+
+#cab_content{
+  grid-area: journey_grid;
+  grid-column: 2;
+  grid-row: 5;
+  line-height: 3vw;
+  width: 50vw;
+  position: static;
+}
 
 /*MY COMMUNITY SECTION*/
 .community_container {
-  background-color: var(--soho_black_opaque);
+  background-color: var(--soho_maroon_opaque);
   background-size: auto 100%;
   resize: vertical;
   word-break:break-word;
   white-space: normal;
   text-decoration: none;
 }
+  #community_text{
+    color: white;
+    font-family: var(--h5_font);
+    background: transparent;
+    text-align: center;
+    position: static;
+  }
 
-#community_text{
-  color: white;
-  font-family: var(--h3_font);
-  background: transparent;
-  text-align: center;
-  position: static;
-  font-size: 300%;
-  margin: 0% 5% 0 5%;
-  padding-top: 5%;
-  padding-bottom: 3%;
-}
-
-#community_text p{
-  text-align: center;
-  font-size: 30px;
-}
+  #community_text h1{
+    padding-top: 3%;
+    font-size: 400%;
+  }
+  #community_text p{
+    font-family: var(--h4_font);
+    text-align: center;
+    font-size: 20px;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin: 0% 5% 0 5%;
+  }
 
 .community_grid {
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows:1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr;
   column-gap: 2%;
   row-gap: 3%;
-  justify-items: left;
+  justify-items: center;
   justify-content: space-between;
-  font-size: 100%;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding: 1%;
-  background-color: red;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+  .community_grid h2,.community_grid a {
+    font-size: 1.5vw;
+    padding-bottom: 5%;
+    color: white;
+    text-decoration: none;
+    font-family: var(--h3_font);
+  }
+  .community_grid p{
+    font-family: var(--h4_font);
+    font-size: 1vw;
+    font-weight: 200;
+  }
+
+.fza_wrapper, .stackoverflow_wrapper, .medium_wrapper, .dribbble_wrapper, .behance_wrapper, .fishbowl_wrapper, .lifeat_wrapper, .athleanx_wrapper, .atlassian_wrapper {
+  position: static;
+  border: 2px groove var(--soho_white_opaque);
+  border-radius: 10px;
+  cursor: pointer; 
+  transition: background .5s;
+  padding: 5%;
+  background-color: var(--coffeekey-grey_opaque);
+}
+.fza_wrapper:hover, .stackoverflow_wrapper:hover, .medium_wrapper:hover, .dribbble_wrapper:hover, .behance_wrapper:hover, .fishbowl_wrapper:hover, .lifeat_wrapper:hover, .athleanx_wrapper:hover, .atlassian_wrapper:hover {
+  background-color: var(--coffeekey-teal_opaque);
+  border: 2px solid var(--soho_white_opaque);
 }
 
-.stackoverflow_wrapper, .medium_wrapper, .dribbble_wrapper, .behance_wrapper {
+.fza_wrapper{
+  grid-area: community_grid;
+  grid-column: 1;
+  grid-row: 1;
   position: static;
-  border: 2px solid black;
 }
 
 .stackoverflow_wrapper{
   grid-area: community_grid;
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 1;
   position: static;
-  height: fit-content;
 }
 
 .medium_wrapper{
   grid-area: community_grid;
-  grid-column: 2;
+  grid-column: 3;
   grid-row: 1;
   position: static;
-  height: fit-content;
 }
 
 .dribbble_wrapper{
   grid-area: community_grid;
-  grid-column: 3;
-  grid-row: 1;
+  grid-column: 1;
+  grid-row: 2;
   position: static;
-  height: fit-content;
 }
 
 .behance_wrapper{
   grid-area: community_grid;
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 2;
   position: static;
-  height: fit-content;
 }
 
+.fishbowl_wrapper{
+  grid-area: community_grid;
+  grid-column: 3;
+  grid-row: 2;
+  position: static;
+}
+
+.lifeat_wrapper{
+  grid-area: community_grid;
+  grid-column: 1;
+  grid-row: 3;
+  position: static;
+}
+
+.athleanx_wrapper{
+  grid-area: community_grid;
+  grid-column: 2;
+  grid-row: 3;
+  position: static;
+}
+
+.atlassian_wrapper{
+  grid-area: community_grid;
+  grid-column: 3;
+  grid-row: 3;
+  position: static;
+}
 /* PORTFOLIO PAGE*/
 .portfolio_introheader{
   background-image: url(https://kdjiang390.github.io/Assets/portfolio_introheader.jpg);
