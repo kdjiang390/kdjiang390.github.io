@@ -5,7 +5,7 @@
   --soho_black: rgb(31,29,31,1);
   --soho_maroon: rgb(98,68,69,1);
   --soho_black_opaque: rgb(31,29,31,0.5);
-  --soho_white_opaque:rgb(255,255,255,0.5);
+  --soho_white_opaque:rgb(255,255,255,0.6);
   --soho_dgrey_opaque:rgb(78,79,84,0.6);
   --soho_lgrey_opaque:rgb(200,207,214,0.3);
   --soho_maroon_opaque: rgb(98,68,69,0.5);
@@ -58,7 +58,7 @@ footer {
   background-image: url(https://kdjiang390.github.io/Assets/me.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position:static;
+  background-position: center;
   right: 0;
   top: 0;
   aspect-ratio: 16/9;
@@ -193,21 +193,18 @@ footer {
 /* BELOW: about me page*/
 
 .aboutme_body{
-  background-image: url(https://kdjiang390.github.io/Assets/aboutme_body.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 .aboutme_introheader{
   /* remember to add https:// to link */
+  background-image: url(https://kdjiang390.github.io/Assets/road.jpg);
   background-repeat: no-repeat;
-  background: transparent;
-  background-size: auto;
-  position:static;
+  background-size: cover;
+  background-position: center;
   right: 0;
   top: 0;
-  aspect-ratio: 16/9;
-  transform: scale(1, 1);
 }
 
 
@@ -227,7 +224,7 @@ footer {
 }
 
 .intro_content h1{
-  color: var(--soho_black_opaque);
+  color: var(--soho_white_opaque);
   text-align: center;
   font-size: 7vw;
 }
@@ -244,11 +241,19 @@ footer {
   word-break:break-word;
   white-space: normal;
 }
+.journey_background{
+  background-image: url(https://kdjiang390.github.io/Assets/wave.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 
 .journey_container{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: var(--soho_black_opaque);
-  background-size: auto 100%;
-  resize: vertical;
 }
 
 .journey_content h1{
@@ -262,22 +267,34 @@ footer {
 
 .journey_content #title, .journey_content #location, .journey_content #company{
   font-family: var(--h3_font);
-  color: var(--soho_white);
-  font-size: 100%;
-  line-height: 150%;
+  color: darksalmon;
+  font-size: 130%;
+  line-height: 170%;
 }
+
+.journey_content #title{
+  color: white;
+}
+
+.journey_content #location{
+  color:wheat;
+  border-bottom: dotted;
+  border-color: var(--soho_white);
+}
+
 
 .journey_content p {
   font-family: var(--h4_font);
   color: var(--soho_white);
-  font-size: 1.5vw;
+  font-size: 17px;
   line-height: 150%;
+  padding-top: 3%;
 }
 
 .journey_grid {
   display: grid;
   grid-template-columns: 40% 60%;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content min-content min-content min-content;
   column-gap: 2%;
   row-gap: 5vw;
   justify-content:center;
@@ -290,11 +307,12 @@ footer {
   grid-column: 1;
   grid-row: 1;
   position: static;
-  height: 15vw;
-  padding-top: 1%;
-  margin-left: 20%;
+  object-fit: contain;
+  height: 20vw;
+  margin-left: 35%;
+  margin-top: 5%;
   box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
-  border: 8px solid var(--soho_white);
+  border-radius: 10px;
 }
 
 #tesla_content{
@@ -311,11 +329,12 @@ footer {
   grid-column: 1;
   grid-row: 2;
   position: static;
+  object-fit: contain;
   height: 15vw;
-  padding-top: 1%;
+  margin-top: 5%;
   margin-left: 20%;
   box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
-  border: 8px solid var(--soho_white);
+  border-radius: 10px;
 }
 
 #umd_content{
@@ -327,43 +346,28 @@ footer {
   position: static;
 }
 
-#hope_image {
-  grid-area: journey_grid;
-  grid-column: 1;
-  grid-row: 3;
-  position: static;
-  height: 15vw;
-  padding-top: 1%;
-  margin-left: 20%;
-  box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
-  border: 8px solid var(--soho_white);
-}
-
-#hope_content{
-  grid-area: journey_grid;
-  grid-column: 2;
-  grid-row: 3;
-  line-height: 3vw;
-  width: 50vw;
-  position: static;
+.journey_content a{
+  text-decoration: none;
+  color: wheat;
 }
 
 #liberty_image {
   grid-area: journey_grid;
   grid-column: 1;
-  grid-row: 4;
+  grid-row: 3;
   position: static;
-  height: 15vw;
-  padding-top: 1%;
-  margin-left: 20%;
+  object-fit: contain;
+  height: 18vw;
+  margin-top: 5%;
+  margin-left: 30%;
   box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
-  border: 8px solid var(--soho_white);
+  border-radius: 10px;
 }
 
 #liberty_content{
   grid-area: journey_grid;
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 3;
   line-height: 3vw;
   width: 50vw;
   position: static;
@@ -372,16 +376,39 @@ footer {
 #cab_image {
   grid-area: journey_grid;
   grid-column: 1;
-  grid-row: 5;
+  grid-row: 4;
   position: static;
-  height: 15vw;
-  padding-top: 1%;
+  object-fit: contain;
+  height: 11vw;
+  margin-top: 5%;
   margin-left: 20%;
   box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
-  border: 8px solid var(--soho_white);
+  border-radius: 10px;
 }
 
 #cab_content{
+  grid-area: journey_grid;
+  grid-column: 2;
+  grid-row: 4;
+  line-height: 3vw;
+  width: 50vw;
+  position: static;
+}
+
+#psu_image {
+  grid-area: journey_grid;
+  grid-column: 1;
+  grid-row: 5;
+  position: static;
+  object-fit: contain;
+  height: 13vw;
+  margin-top: 5%;
+  margin-left: 28%;
+  box-shadow: 5px 5px 5px var(--coffeekey-black_opaque);
+  border-radius: 10px;
+}
+
+#psu_content{
   grid-area: journey_grid;
   grid-column: 2;
   grid-row: 5;
@@ -391,6 +418,14 @@ footer {
 }
 
 /*MY COMMUNITY SECTION*/
+
+.community_background{
+  background-image: url(https://kdjiang390.github.io/Assets/keyboard.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .community_container {
   background-color: var(--soho_maroon_opaque);
   background-size: auto 100%;
@@ -402,7 +437,6 @@ footer {
   #community_text{
     color: white;
     font-family: var(--h5_font);
-    background: transparent;
     text-align: center;
     position: static;
   }
@@ -430,7 +464,7 @@ footer {
   justify-content: space-between;
   margin-left: 20%;
   margin-right: 20%;
-  padding-bottom: 5%;
+  padding-bottom: 15%;
   text-align: center;
 }
   .community_grid h2,.community_grid a {
