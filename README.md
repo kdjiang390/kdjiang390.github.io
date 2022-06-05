@@ -14,18 +14,19 @@ Stylings are separated by classes and elements uniqued named for each pages, wit
 - 5 hand picked fonts
 - 2 color palette themes built by myself
 ## layout
-### Home
+### Home (deployed)
 - scrollable
 - static 
 - non-stack background 
 - access to social media
-### About Me (work in progress)
+### About-Me (deployed)
 - scrollable
 - multiple sections
 - static
-- non-stack background (stretched vertically)
-- use of flex grids
-### Portfolio (not yet started)
+- hyperlinked texts
+- stacked background
+- use of grid layout
+### Portfolio (WIP)
 - scrollable
 - multiple sections
 - static
@@ -44,3 +45,6 @@ Stylings are separated by classes and elements uniqued named for each pages, wit
 
 ## 5/28/22
 - Completed homepage
+
+## 6/5/22
+- Completed About-Me page
