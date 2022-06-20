@@ -14,30 +14,30 @@ Stylings are separated by classes and elements uniqued named for each pages, wit
 - 5 hand picked fonts
 - 2 color palette themes built by myself
 ## layout
-### Home (deployed)
+### Home (live)
 - scrollable
 - static 
 - non-stack background 
 - access to social media
-### About-Me (deployed)
+### About-Me (live)
 - scrollable
 - multiple sections
 - static
 - hyperlinked texts
 - stacked background
 - use of grid layout
-### Portfolio (WIP)
+### Portfolio (live)
 - scrollable
 - multiple sections
 - static
-- non-stack background (stretched vertically)
-- Use of web app screenshots as demonstration, link will be provided
-- Use of embedded feeds
-### Contacts (not yet started)
+- grid boxes (stretched vertically)
+- Use of web app in a mockup image with hyperlink
+- apps are deployed on another server host 
+### Contacts (work in progress)
 - scrollable
 - static 
-- non-stack background 
 - access to contacts
+- form features for collecting feedbacks
 
 # Update Logs
 ## 5/16/22
@@ -48,3 +48,6 @@ Stylings are separated by classes and elements uniqued named for each pages, wit
 
 ## 6/5/22
 - Completed About-Me page
+
+## 6/19/22
+- Completed Portfolio page
