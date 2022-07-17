@@ -1,13 +1,8 @@
 # kdjiang390.github.io
-Building my first personal webpage from scratch!
+Building my first personal website from scratch! 
 
-Webpages hosted by Github Page SSG. Will explore dynamic hosting as I progress.
-
-I've decided to use the single linked style.css for all my html pages.
-
-Stylings are separated by classes and elements uniqued named for each pages, with custom variables.
-
-
+Webpages hosted by Github Page as static site. Recently re-engineered a React app version of my personal website and served it on Firebase as well (runs MUCH smoother and faster. Will add new functionalities later too)
+#### app URL: https://personal-website-9fa0e.firebaseapp.com/
 
 # Design
 ## styling
@@ -41,13 +36,13 @@ Stylings are separated by classes and elements uniqued named for each pages, wit
 
 # Update Logs
 
+## 7/17/22
+- React app version of the page is LIVE (link is at the top of the page)! Hosted on firebase because, well, I want to step out of my Github comfort zone. 
+- HOWEVER, the Contacts page is not done yet. But that wouldn't be too difficult to do as I have found a way to have a single codebase to deploy on both GH and Firebase platforms. All part of the learning process.
+
 ## 7/16/22
-- In parallel to development of Contacts page, I've decided it's time to step up the game and integrate this project into the Gatsby framework. Why?
-- 1. because the framework was built and optimized for static websites
-- 2. because it allows better integration with React library in JavaScript
-- 3. because it gives great flexibility to incorporate new webpage functionality
+- In parallel to development of Contacts page, I've decided it's time to step up the game and re-engineer it with React JS. Why? Because it offers flexibility and unlocks access to dynamic features.
 - ### MORE IMPORTANTLY, It's also a great learning opportunity so why not :)
-- This'll likely take longer time to do due to conversion of syntax and styling tweaks, just FYI.
 
 ## 6/19/22
 - Completed Portfolio page
