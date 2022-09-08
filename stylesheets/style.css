@@ -98,10 +98,10 @@ footer {
 
 #intro_liners{
   word-break:break-word;
-  text-align: left;
+  text-align: center;
   white-space: normal;
   background-color: var(--soho_black_opaque);
-  width: 50vw;
+  width: 50%;
   padding: 0px 0px 0px 0px;
   margin-top: 10%;
 }
@@ -109,38 +109,36 @@ footer {
 #intro_liners h1 {
   width: fit-content;
   color: var(--soho_white);
-  font-size:7vw;
-  bottom: 100px;
+  font-size:45px;
   font-family: var(--h5_font);
   font-weight: bold;
-  position: flex;
-  text-align: left;
+  text-align: center;
+  margin-top: 10%;
   padding: 0px 15px 0px 15px;
 }
 
 #intro_liners h2 {
   width: fit-content;
   color: var(--soho_white);
-  font-size:2vw;
+  font-size:13px;
   font-family: var(--h3_font);
   font-weight: bold;
-  text-align: left;
-  padding: 10% 20px 20px 20px;
-
+  text-align: center;
+  padding: 10px 20px 0px 20px;
 }
 
 #intro_liners h3 {
   width: fit-content;
   color: var(--soho_white);
-  font-size:2vw;
+  font-size:12px;
   font-family: var(--h3_font);
   font-weight: bold;
-  text-align: left;
+  text-align: center;
   padding: 20px 20px 20px 20px;
 }
 
 #intro_liners ul{
-  padding: 30px 0px 0px 0px;
+  margin: 10px 40px 0px 0px;
 }
 
 #intro_liners li{
@@ -157,8 +155,6 @@ footer {
   border-style: solid;
   border-color: white;
   box-sizing: border-box;
-  width: 100px;
-  margin-left: 20px;
   margin-bottom: 10px;
 }
 
@@ -574,21 +570,22 @@ footer {
   border-radius: 15px;
   font-family: var(--h5_font);
   font-weight: bold;
-  font-size: 150%;
+  font-size: 2vw;
   color: white;
   word-break:break-word;
   white-space: normal;
   text-decoration: none;
   text-align: center;
-  align-self: center;
   margin-top: 5%;
   padding: 5% 3% 5% 3%;
   width: 50%;
 }
 
+
+
 .portfolio_head_content_paragraph p{
   font-family: var(--h4_font);
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 .portfolio_body_grid {
@@ -625,6 +622,7 @@ footer {
   object-fit:cover;
   overflow: hidden;
   align-items:center;
+  border-radius: 15px;
 }
 
 .PBG2{
@@ -662,7 +660,7 @@ footer {
 
 /* CONTACTS PAGE*/
 .contacts_introheader{
-  background-image: url(https://kdjiang390.github.io/Assets/contacts_introheader.jpg);
+  background-image: url(https://kdjiang390.github.io/Assets/grid-book.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position:static;
@@ -687,7 +685,8 @@ h1{
   text-align: center;
   font-family: var(--h3_font);
   color: white;
-  font-size: 20px;
+  font-size: 15px;
+  padding: 0px 30px 0px 30px;
 }
 .contact_form {
   width: 100%;
@@ -711,7 +710,7 @@ h1{
 input[name=email],input[name=subject],textarea[name=message]  {
   border-radius: 4px;
   border: 1px solid white;
-  color: red;
+  color: black;
   background-color: white;
   width: 70%;
   margin-bottom: 1.5%;
@@ -719,7 +718,7 @@ input[name=email],input[name=subject],textarea[name=message]  {
 }
 
 input[name=email]:focus,input[name=subject]:focus,textarea[name=message]:focus  {
-  background: wheat;
+  border: 2px solid grey;
   transition: 0.3s;
 }
 
@@ -759,6 +758,12 @@ textarea[name=message] {
   width: 50%;
   margin-top: 2%;
 }
+
+.pageclip-form__submit:hover{
+  background-color: black;
+  transition: 0.6s;
+}
+
 .pageclip-form__submit:after{
   display:inline-block;
   position:relative;
