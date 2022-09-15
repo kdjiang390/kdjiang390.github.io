@@ -2,7 +2,7 @@
 Building my first personal website from scratch! 
 
 Webpages hosted by Github Page as static site. Recently re-engineered a React app version of my personal website and served it on Firebase as well (runs MUCH smoother and faster. Will add new functionalities later too)
-#### app URL: https://personal-website-9fa0e.firebaseapp.com/
+
 
 # Design
 ## styling
